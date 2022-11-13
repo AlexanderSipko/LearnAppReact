@@ -1,13 +1,10 @@
 import React from "react"
 import '../css/Navbar.css';
+import logorairbnb from '../image/airbnb-logo.png'
 
-
-export default function Nacbar() {
+export default function Navbar() {
     return (<nav className="nav">
-                <ul>
-                    <li>React Course</li>
-                    <li>AvSipko</li>
-                    <li>Project 1</li>
-                </ul>
-            </nav>)
+               <img className="nav--logo" src={logorairbnb} alt="logo"></img>
+            </nav>
+    )
 }
