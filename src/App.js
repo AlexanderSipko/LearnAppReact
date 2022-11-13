@@ -1,11 +1,14 @@
 import Navbar from '../src/components/Navbar'
+import Main from '../src/components/Main'
+import Footer from '../src/components/Footer'
 import './css/App.css';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello</h1>
       <Navbar />
+      <Main />
+      <Footer />
     </div>
   );
 }
