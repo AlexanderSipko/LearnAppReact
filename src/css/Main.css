@@ -1,14 +1,33 @@
 
 
-.nav {
-    max-width: 100%;
+
+main {
+    padding: 57px 27px;
+    color: #eff8ff;
+    background-image: url(../image/Unknown2.webp);
+    background-repeat: no-repeat;
+    /* background-position-x: right;
+    background-position-y: center; */
+    background-position: right 75%;
 }
 
-h1 {
-    margin: 0 auto;
-    text-align: center;
+.main--titel {
+    margin: 0px;
+    font-size: 39px ;
+    letter-spacing: -0.05em;
 }
 
-p {
-    padding-left: 38px;
+.main--facts {
+    margin-top:  46px;
+}
+
+.main--facts > li {
+    font-size: 16px;
+    margin-top: 14px;
+    max-width: 400px;
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
 }

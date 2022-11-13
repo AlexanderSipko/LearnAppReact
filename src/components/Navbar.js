@@ -1,13 +1,14 @@
 import React from "react"
 import '../css/Navbar.css';
+import ReactLogo from "../image/Unknown2.webp";
 
 export default function Nacbar() {
     return (<nav className="nav">
-                <image src='../image/Unknown.png'></image>
+                <img src={ReactLogo} alt="react_img" />
                 <ul>
-                    <li>Contact</li>
-                    <li>Project</li>
-                    <li>Info</li>
+                    <li>React Course</li>
+                    <li>AvSipko</li>
+                    <li>Project 1</li>
                 </ul>
             </nav>)
 }
