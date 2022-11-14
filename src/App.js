@@ -1,6 +1,7 @@
 import Navbar from '../src/components/Navbar'
 import Main from '../src/components/Main'
 import Footer from '../src/components/Footer'
+import Card from './components/Card';
 import './css/App.css';
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
     <div>
       <Navbar />
       <Main />
+      <Card />
       <Footer />
     </div>
   );
