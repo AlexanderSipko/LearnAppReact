@@ -1,23 +1,19 @@
 import React from "react"
 import '../css/Card.css';
-import ImagePath1 from '../image/card1.png'
-import ImagePath2 from '../image/card2.png'
-import ImagePath3 from '../image/card3.png'
-import Star from '../image/Star 1.png'
 
-export default function Card() {
+export default function Card(props) {
 
-    return (
+    return ( 
         <div className="card">
-            <img className="card--image" src={ImagePath1} alt="logo"></img>
+            <img className="card--image" src={props.img} alt="logo"></img>
             <div className="card--stats">
-                <img className="card--star" src={Star} alt=""></img>
-                <span>5.0</span>
-                <span className="gray">(6) + </span>
-                <span className="gray">USA</span>
+                <img className="card--star" src={props.stars_image} alt=""></img>
+                <span>{props.scrol}</span>
+                <span className="gray">{props.plus}</span>
+                <span className="gray">{props.contry}</span>
             </div>
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className="bold">From $136 </span>/ person</p> 
+            <p>{props.contry}</p>
+            <p><span className="bold">{props.coast}</span>{props.coastType}</p> 
         </div>
     )
 }
