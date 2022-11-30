@@ -12,7 +12,7 @@ export default function Main() {
             <h1 className="hero--header">Online Experiences</h1>
             <p className="hero--text">Join unique interactive activitiesled by one-of-a-kind hosts—all without leaving home.
 </p>
-    <p>2:50 to {link}</p>
+    <p>4:20 to {link}</p>
 
         </section>
     )

@@ -2,12 +2,17 @@
 
 .card--image {
     width: 100%;
+    height: 239.9px;
     border-radius: 9px;
+    margin-bottom: 9px;
 }
 
 .card {
     width: 175px;
     font-size: 12px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
 }
 
 .card--stats {

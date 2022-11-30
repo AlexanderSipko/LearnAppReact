@@ -1,19 +1,23 @@
 import React from "react"
 import '../css/Card.css';
 
+
 export default function Card(props) {
 
-    return ( 
+    const imagesrc = require('../image/Star 1.png');
+    const img = require(`../image/${props.img}`);
+
+    return (
         <div className="card">
-            <img className="card--image" src={props.img} alt="logo"></img>
+            <img src={img} className="card--image" alt=''/>
             <div className="card--stats">
-                <img className="card--star" src={props.stars_image} alt=""></img>
-                <span>{props.scrol}</span>
-                <span className="gray">{props.plus}</span>
-                <span className="gray">{props.contry}</span>
+                <img src={imagesrc} className="card--star" alt=''/>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.location}</span>
             </div>
-            <p>{props.contry}</p>
-            <p><span className="bold">{props.coast}</span>{props.coastType}</p> 
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
