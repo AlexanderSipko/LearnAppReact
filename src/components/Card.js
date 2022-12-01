@@ -5,14 +5,14 @@ import '../css/Card.css';
 export default function Card(props) {
 
     const imagesrc = require('../image/Star 1.png');
-    const img = require(`../image/${props.img}`);
+    const img = require(`../image/${props.item.coverImg}`);
 
     let badgetText
-    if (props.openSpots === 0) {
+    if (props.item.openSpots === 0) {
         badgetText = 'SOLD OUT'
-    } else if (props.location === 'Online') {
+    } else if (props.item.location === 'Online') {
         badgetText = 'ONLINE'
-    } 
+    }
 
     return (
         <div className="card">
@@ -21,12 +21,12 @@ export default function Card(props) {
             <img src={img} className="card--image" alt=''/>
             <div className="card--stats">
                 <img src={imagesrc} className="card--star" alt=''/>
-                <span>{props.rating}</span>
-                <span className="gray">({props.reviewCount}) • </span>
-                <span className="gray">{props.location}</span>
+                <span>{props.item.stats.rating}</span>
+                <span className="gray">({props.item.stats.reviewCount}) • </span>
+                <span className="gray">{props.item.location}</span>
             </div>
-            <p>{props.title}</p>
-            <p><span className="bold">From ${props.price}</span> / person</p>
+            <p>{props.item.title}</p>
+            <p><span className="bold">From ${props.item.price}</span> / person</p>
         </div>
     )
 }
