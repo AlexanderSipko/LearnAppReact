@@ -12,6 +12,8 @@ export default function App() {
         <Card
             key={item.id}
             item={item}
+            title={item.title}
+            description={item.description}
         />
       )
   });

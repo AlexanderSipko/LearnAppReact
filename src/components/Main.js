@@ -9,8 +9,9 @@ export default function Main() {
     return (
         <section className="hero">
             <img className="hero--foto" src={group} alt="hero"></img>
-            <h1 className="hero--header">Online Experiences 4:30 to {link}</h1>
-            <p className="hero--text">Join unique interactive activitiesled by one-of-a-kind hosts—all without leaving home.</p>
+            <h1 className="hero--header">Online Experiences</h1>
+            <p className="hero--text">Join unique interactive activities led by 
+            one-of-a-kind hosts—all without leaving home.</p>    
         </section>
     )
 }
